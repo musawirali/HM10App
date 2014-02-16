@@ -22,6 +22,8 @@
 		F346559418AF1A7300539E04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F346557318AF1A7300539E04 /* UIKit.framework */; };
 		F346559C18AF1A7300539E04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F346559A18AF1A7300539E04 /* InfoPlist.strings */; };
 		F346559E18AF1A7300539E04 /* HM10ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F346559D18AF1A7300539E04 /* HM10ControllerTests.m */; };
+		F34655A918AF1B3300539E04 /* DevicesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F34655A818AF1B3300539E04 /* DevicesViewController.m */; };
+		F34655AC18AF24A400539E04 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F34655AB18AF24A400539E04 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		F346559918AF1A7300539E04 /* HM10ControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HM10ControllerTests-Info.plist"; sourceTree = "<group>"; };
 		F346559B18AF1A7300539E04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F346559D18AF1A7300539E04 /* HM10ControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HM10ControllerTests.m; sourceTree = "<group>"; };
+		F34655A718AF1B3300539E04 /* DevicesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DevicesViewController.h; sourceTree = "<group>"; };
+		F34655A818AF1B3300539E04 /* DevicesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DevicesViewController.m; sourceTree = "<group>"; };
+		F34655AA18AF24A400539E04 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F34655AB18AF24A400539E04 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,10 @@
 				F346558818AF1A7300539E04 /* ViewController.m */,
 				F346558A18AF1A7300539E04 /* Images.xcassets */,
 				F346557618AF1A7300539E04 /* Supporting Files */,
+				F34655A718AF1B3300539E04 /* DevicesViewController.h */,
+				F34655A818AF1B3300539E04 /* DevicesViewController.m */,
+				F34655AA18AF24A400539E04 /* MainViewController.h */,
+				F34655AB18AF24A400539E04 /* MainViewController.m */,
 			);
 			path = HM10Controller;
 			sourceTree = "<group>";
@@ -253,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F34655A918AF1B3300539E04 /* DevicesViewController.m in Sources */,
 				F346558918AF1A7300539E04 /* ViewController.m in Sources */,
 				F346558018AF1A7300539E04 /* AppDelegate.m in Sources */,
+				F34655AC18AF24A400539E04 /* MainViewController.m in Sources */,
 				F346557C18AF1A7300539E04 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +408,7 @@
 				GCC_PREFIX_HEADER = "HM10Controller/HM10Controller-Prefix.pch";
 				INFOPLIST_FILE = "HM10Controller/HM10Controller-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -409,6 +422,7 @@
 				GCC_PREFIX_HEADER = "HM10Controller/HM10Controller-Prefix.pch";
 				INFOPLIST_FILE = "HM10Controller/HM10Controller-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
